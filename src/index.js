@@ -14,7 +14,7 @@ module.exports = function getZerosCount(number, base) {
       let n = number;
       while (n / i > 0) {   // count number of simple multipliers from base in number
         sm_number += Math.floor(n / i);
-        t = Math.floor(n/i);
+        n = Math.floor(n/i);
       }
       zeros =  Math.min(zeros,Math.floor(sm_number / sm_base));
     }
